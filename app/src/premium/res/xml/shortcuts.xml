@@ -1,0 +1,33 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="StartProxyShortCut"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_check_circle_48"
+        android:shortcutShortLabel="@string/start_shortcut_short_label1"
+        android:shortcutLongLabel="@string/start_shortcut_long_label1"
+        android:shortcutDisabledMessage="@string/start_shortcut_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.github.kr328.clash.premium"
+            android:targetClass="com.github.kr328.clash.ScStartProxyActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+    <shortcut
+        android:shortcutId="StopProxyShortCut"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_block_48"
+        android:shortcutShortLabel="@string/stop_shortcut_short_label1"
+        android:shortcutLongLabel="@string/stop_shortcut_long_label1"
+        android:shortcutDisabledMessage="@string/stop_shortcut_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.github.kr328.clash.premium"
+            android:targetClass="com.github.kr328.clash.ScStopProxyActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+    </shortcut>
+</shortcuts>

@@ -213,4 +213,10 @@
     <string name="name_server_policy">Name Server 策略</string>
     <string name="block_loopback">阻止本地迴環</string>
     <string name="block_loopback_summary">阻止本地迴環連接</string>
+    <string name="start_shortcut_short_label1">運行</string>
+    <string name="start_shortcut_long_label1">運行Clash</string>
+    <string name="start_shortcut_disabled_message1">無配置文件</string>
+    <string name="stop_shortcut_short_label1">停止</string>
+    <string name="stop_shortcut_long_label1">停止Clash</string>
+    <string name="stop_shortcut_disabled_message1">無配置文件</string>
 </resources>

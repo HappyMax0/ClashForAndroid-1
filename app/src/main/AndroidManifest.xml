@@ -53,6 +53,8 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
         <activity
             android:name=".ExternalImportActivity"
@@ -151,7 +153,24 @@
             android:configChanges="uiMode"
             android:exported="false"
             android:label="@string/files" />
-
+        <activity
+            android:name=".ScStartProxyActivity"
+            android:exported="true"
+            android:configChanges="uiMode"
+            android:label="Switch" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScStopProxyActivity"
+            android:exported="true"
+            android:configChanges="uiMode"
+            android:label="Switch" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
         <service
             android:name=".LogcatService"
             android:exported="false"
@@ -166,7 +185,6 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
         </service>
-
         <receiver
             android:name=".RestartReceiver"
             android:enabled="false"
