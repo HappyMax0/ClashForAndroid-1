@@ -1,5 +1,6 @@
 package com.github.kr328.clash
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.github.kr328.clash.design.MainDesign
@@ -14,8 +15,10 @@ class ScStopProxyActivity : BaseActivity<MainDesign>() {
         super.onCreate(savedInstanceState)
         moveTaskToBack(true)
 
-        if (clashRunning)
-            stopClashService()
+        if (clashRunning){
+            val broadcastIntent = Intent("com.github.kr328.clash.SERVICE_STOP")
+            sendBroadcast(broadcastIntent)
+        }
         else
         {
             val text = R.string.stopped

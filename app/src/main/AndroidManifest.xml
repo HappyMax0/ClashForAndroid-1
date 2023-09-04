@@ -16,6 +16,7 @@
     <uses-permission
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
 
     <application
         android:name=".MainApplication"
@@ -45,7 +46,6 @@
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -156,7 +156,6 @@
         <activity
             android:name=".ScStartProxyActivity"
             android:exported="true"
-            android:configChanges="uiMode"
             android:label="Switch" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -165,7 +164,6 @@
         <activity
             android:name=".ScStopProxyActivity"
             android:exported="true"
-            android:configChanges="uiMode"
             android:label="Switch" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -192,6 +190,22 @@
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".StartServiceReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.github.kr328.clash.SERVICE_START" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".StopServiceReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.github.kr328.clash.SERVICE_STOP" />
             </intent-filter>
         </receiver>
     </application>
