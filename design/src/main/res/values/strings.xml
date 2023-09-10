@@ -279,10 +279,8 @@
     <string name="version_updated_tips">The settings have been reseted and the old profiles needs to be saved again.</string>
 
     <string name="mode_switch_tips">Valid only for current session</string>
-    <string name="start_shortcut_short_label1">Start</string>
-    <string name="start_shortcut_long_label1">Start Clash</string>
-    <string name="start_shortcut_disabled_message1">No Config</string>
-    <string name="stop_shortcut_short_label1">Stop</string>
-    <string name="stop_shortcut_long_label1">Stop Clash</string>
-    <string name="stop_shortcut_disabled_message1">No Config</string>
+
+    <string name="switch_shortcut_label">Switch</string>
+    <string name="switch_shortcut_long_label">Switch Status</string>
+    <string name="switch_shortcut_disabled_msg">Please check configs</string>
 </resources>

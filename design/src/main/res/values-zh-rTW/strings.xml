@@ -217,10 +217,7 @@
     <string name="allow_bypass">允許應用程式繞過</string>
     <string name="allow_bypass_summary">允許其他程式繞過 VPN</string>
     <string name="sniff_tls_sni">嗅探 TLS 的 SNI</string>
-    <string name="start_shortcut_short_label1">運行</string>
-    <string name="start_shortcut_long_label1">運行Clash</string>
-    <string name="start_shortcut_disabled_message1">無配置文件</string>
-    <string name="stop_shortcut_short_label1">停止</string>
-    <string name="stop_shortcut_long_label1">停止Clash</string>
-    <string name="stop_shortcut_disabled_message1">無配置文件</string>
+    <string name="switch_shortcut_label">切換</string>
+    <string name="switch_shortcut_long_label">切換狀態</string>
+    <string name="switch_shortcut_disabled_msg">請檢查配置檔</string>
 </resources>
