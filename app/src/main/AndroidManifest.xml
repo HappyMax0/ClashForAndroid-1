@@ -155,7 +155,8 @@
         <activity
             android:name=".ScSwitchProxyActivity"
             android:exported="true"
-            android:label="Switch" >
+            android:label="Switch"
+            android:theme="@style/TranslucentStyle" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
